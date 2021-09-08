@@ -1,3 +1,6 @@
+body {
+  font-family: "Poppins", arial;
+}
 .jumbotron {
   padding-top: 5rem;
   background-color: #FFC10755;
