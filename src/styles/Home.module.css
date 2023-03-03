@@ -1,12 +1,12 @@
 /* Profile styles */
 .profile {
-  @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] rounded-b-2xl flex justify-between items-center drop-shadow-md overflow-hidden;
+  @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] rounded-b-2xl grid md:flex justify-between items-center drop-shadow-md overflow-hidden;
 }
 .profile img {
   @apply relative;
 }
 .detail {
-  @apply leading-6 text-slate-100 mx-10;
+  @apply leading-6 text-slate-100 mt-10 md:mt-0 mx-10;
 }
 .detail h1 {
   @apply text-2xl font-semibold text-white;
@@ -18,28 +18,28 @@
   @apply font-semibold text-white;
 }
 .circle1 {
-  @apply absolute h-[200px] w-[200px] bg-white/50 left-3/4 rounded-full;
+  @apply absolute h-[200px] w-[200px] bg-white/50 -translate-x-1/4 md:translate-x-0 md:left-3/4 rounded-full;
 }
 .circle2 {
-  @apply absolute h-[10px] w-[10px] bg-white/50 left-[65%] rounded-full animate-bounce;
+  @apply absolute h-[10px] w-[10px] bg-white/50 left-[70%] sm:left-[65%] rounded-full animate-bounce;
 }
 .circle3 {
-  @apply absolute h-[10px] w-[10px] bg-white/50 left-[68%] rounded-full animate-bounce;
+  @apply absolute h-[10px] w-[10px] bg-white/50 left-[75%] sm:left-[68%] rounded-full animate-bounce;
 }
 .circle4 {
-  @apply absolute h-[10px] w-[10px] bg-white/50 left-[71%] rounded-full animate-bounce;
+  @apply absolute h-[10px] w-[10px] bg-white/50 left-[80%] sm:left-[71%] rounded-full animate-bounce;
 }
 .pacman {
   @apply absolute w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-b-[20px] border-l-white/50 border-r-transparent border-t-white/50 border-b-white/50 left-[57%] rounded-full animate-bounce;
 }
 
 /* styles About */
-.about {
+.content {
   @apply py-5 px-4 text-slate-500;
 }
-.about span {
+.content span {
   @apply font-semibold;
 }
-.about h1 {
+.content h2 {
   @apply uppercase text-lg text-[#94bbe9] font-bold mb-2;
 }

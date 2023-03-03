@@ -1,0 +1,9 @@
+.footer {
+  @apply bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] text-center rounded-t-2xl text-slate-100 pt-5 pb-10 shadow-md overflow-hidden;
+}
+.footer q {
+  @apply text-sm;
+}
+.footer a {
+  @apply text-white;
+}

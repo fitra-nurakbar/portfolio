@@ -1,16 +1,12 @@
 import Head from "next/head";
 import { ReactNode } from "react";
 import styles from "@/styles/Layout.module.css";
-import { Inter } from "next/font/google";
+import { inter } from "@/utils/fonts";
 
 type LayoutProps = {
   children: ReactNode;
   title: string;
 };
-
-const inter = Inter({
-  subsets: ["latin"]
-});
 
 export default function Layout({ children, title }: LayoutProps) {
   const titleProps = `Portfolio | ${title}`;
