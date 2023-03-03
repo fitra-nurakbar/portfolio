@@ -1,0 +1,3 @@
+.main {
+  @apply max-w-lg mx-auto pb-[500px] border;
+}
