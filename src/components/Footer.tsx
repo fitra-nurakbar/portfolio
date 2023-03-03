@@ -1,17 +1,35 @@
 import styles from "@/styles/Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <q>
-        Copyrigth2023
+      <div className={styles.containerIcons}>
+        <Link
+          href={"https://www.linkedin.com/in/fitra-nurakbar-5967a8230/"}
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </Link>
+        <Link href={"https://github.com/fitra-nurakbar/"} target="_blank">
+          <FontAwesomeIcon icon={faGithub} />
+        </Link>
         <Link href="https://www.instagram.com/fit.tra_/" target="_blank">
           <FontAwesomeIcon icon={faInstagram} />
-          fit.tra_
         </Link>
+        <Link href={""}>
+          <FontAwesomeIcon icon={faFacebook} />
+        </Link>
+      </div>
+      <q>
+        Copyrigth2023
       </q>
     </footer>
   );

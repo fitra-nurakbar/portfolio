@@ -30,7 +30,7 @@
   @apply absolute h-[10px] w-[10px] bg-white/50 left-[80%] sm:left-[71%] rounded-full animate-bounce;
 }
 .pacman {
-  @apply absolute w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-b-[20px] border-l-white/50 border-r-transparent border-t-white/50 border-b-white/50 left-[57%] rounded-full animate-bounce;
+  @apply absolute w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-b-[20px] border-l-white/50 border-r-transparent border-t-white/50 border-b-white/50 left-[57%] rounded-full animate-bounce hover:border-white/50 hover:translate-x-1/2 hover:cursor-pointer;
 }
 
 /* styles About */
@@ -42,4 +42,7 @@
 }
 .content h2 {
   @apply uppercase text-lg text-[#94bbe9] font-bold mb-2;
+}
+.content p {
+  @apply mb-10
 }
