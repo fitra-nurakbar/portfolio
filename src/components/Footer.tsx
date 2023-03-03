@@ -28,9 +28,16 @@ export default function Footer() {
           <FontAwesomeIcon icon={faFacebook} />
         </Link>
       </div>
-      <q>
-        Copyrigth2023
-      </q>
+      <p>
+        © 2023{" "}
+        <Link href="https://www.instagram.com/fit.tra_/" target="_blank">
+          @fit.tra_
+        </Link>
+        . All Rights Reserved.
+      </p>
+      <Link href={"mailto:fitranurakbar378@gmail.com"}>
+        fitranurakbar378@gmail.com
+      </Link>
     </footer>
   );
 }

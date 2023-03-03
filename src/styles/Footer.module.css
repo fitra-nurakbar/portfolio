@@ -1,12 +1,12 @@
 .footer {
-  @apply bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] text-center rounded-t-2xl text-white/50 pt-5 pb-10 shadow-md overflow-hidden;
+  @apply bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] text-center text-sm rounded-t-2xl text-white/50 pt-5 pb-10 shadow-md overflow-hidden;
 }
-.footer q {
-  @apply text-sm hover:text-white;
+.footer a {
+  @apply text-white font-semibold;
 }
 .containerIcons {
   @apply flex justify-center gap-2 mb-3;
 }
 .containerIcons a {
-  @apply w-10 h-10 border-2 text-xl border-white/50 rounded-full flex justify-center items-center hover:text-white hover:border-white hover:animate-hi;
+  @apply w-10 h-10 border-2 text-xl text-white/50 border-white/50 rounded-full flex justify-center items-center hover:text-white hover:border-white hover:animate-hi;
 }
