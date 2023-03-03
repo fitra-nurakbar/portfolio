@@ -24,7 +24,10 @@ export default function Footer() {
         <Link href="https://www.instagram.com/fit.tra_/" target="_blank">
           <FontAwesomeIcon icon={faInstagram} />
         </Link>
-        <Link href={""}>
+        <Link
+          href={"https://web.facebook.com/fitra.nurakbar.52/"}
+          target="_blank"
+        >
           <FontAwesomeIcon icon={faFacebook} />
         </Link>
       </div>

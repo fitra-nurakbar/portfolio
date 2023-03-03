@@ -65,6 +65,7 @@ export default function Contact() {
           name="name"
           value={formValues.name}
           onChange={handlerChange}
+          required
         />
 
         <label htmlFor="email">Email</label>
@@ -74,6 +75,7 @@ export default function Contact() {
           name="email"
           value={formValues.email}
           onChange={handlerChange}
+          required
         />
 
         <label htmlFor="message">Message</label>
@@ -84,6 +86,7 @@ export default function Contact() {
           onChange={handlerChange}
           cols={30}
           rows={10}
+          required
         ></textarea>
 
         <button type="submit">Send message</button>
