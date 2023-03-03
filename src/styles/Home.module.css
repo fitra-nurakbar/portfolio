@@ -35,7 +35,7 @@
 
 /* styles About */
 .content {
-  @apply py-5 px-4 text-slate-500;
+  @apply pt-7 pb-14 px-4 text-slate-500;
 }
 .content span {
   @apply font-semibold;
@@ -43,6 +43,6 @@
 .content h2 {
   @apply uppercase text-lg text-[#94bbe9] font-bold mb-2;
 }
-.content p {
+.content >   p {
   @apply mb-10
 }

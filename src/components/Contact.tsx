@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/Contact.module.css";
+import Modal from "./Modal";
 
 type FormValues = {
   name: string;
@@ -13,6 +14,8 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [showModal, setShowModal] = useState(false);
+  const [response, setResponse] = useState("");
 
   const handlerChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -45,10 +48,17 @@ export default function Contact() {
       .then((response) => {
         if (response.ok) {
           // Success response
-          console.log("Success!");
+          setResponse("Success!");
+          setShowModal(true);
+          setFormValues({
+            name: "",
+            email: "",
+            message: "",
+          });
         } else {
           // Error response
-          console.error("Error!");
+          setResponse("Error!");
+          setShowModal(true);
         }
       })
       .catch((error) => console.error("Error!", error.message));
@@ -56,6 +66,11 @@ export default function Contact() {
 
   return (
     <>
+      {showModal ? (
+        <Modal response={response} onClose={() => setShowModal(false)} />
+      ) : (
+        ""
+      )}
       <h2>Contact Us</h2>
       <form onSubmit={handlerSubmit} className={styles.form}>
         <label htmlFor="name">Name</label>
@@ -67,7 +82,6 @@ export default function Contact() {
           onChange={handlerChange}
           required
         />
-
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -77,7 +91,6 @@ export default function Contact() {
           onChange={handlerChange}
           required
         />
-
         <label htmlFor="message">Message</label>
         <textarea
           name="message"
@@ -88,7 +101,6 @@ export default function Contact() {
           rows={10}
           required
         ></textarea>
-
         <button type="submit">Send message</button>
       </form>
     </>

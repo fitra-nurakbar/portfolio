@@ -1,0 +1,9 @@
+.modal {
+  @apply top-[2%] left-1/2 -translate-x-1/2 w-[90%] max-w-lg fixed transition-all bg-white text-[#94bbe9] border-2 border-[#94bbe9] flex justify-center items-center rounded-full;
+}
+.modal p {
+  @apply px-10 py-5 w-full;
+}
+.modal button {
+  @apply m-5 text-xs md:text-sm top-0 right-0 hover:text-red-500;
+}
