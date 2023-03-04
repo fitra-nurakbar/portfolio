@@ -1,5 +1,5 @@
 .outside {
-  @apply fixed h-full w-full top-0 left-0 bg-slate-900/20;
+  @apply fixed h-full w-full top-0 left-0 backdrop-blur-sm z-50;
 }
 /* succes */
 .succes {

@@ -1,0 +1,9 @@
+.outside {
+  @apply fixed h-full w-full top-0 left-0 backdrop-blur-sm z-50;
+}
+.load {
+  @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white w-14 h-14 fixed text-[#94bbe9] border-2 border-[#94bbe9] flex justify-center items-center rounded-md transition duration-300 ease-in-out;
+}
+.load svg {
+  @apply animate-spin w-10 h-10;
+}

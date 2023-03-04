@@ -1,6 +1,7 @@
-import Modal from "@/components/Modal";
-import styles from "@/styles/Contact.module.css";
 import React, { useState } from "react";
+import Modal from "@/components/Modal";
+import Loading from "@/components/Loading";
+import styles from "@/styles/Contact.module.css";
 
 type FormValues = {
   name: string;
@@ -16,6 +17,7 @@ export default function Contact() {
   });
   const [showModal, setShowModal] = useState<boolean>(false);
   const [response, setResponse] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handlerChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -30,7 +32,7 @@ export default function Contact() {
 
   const handlerSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    setLoading(true);
     const data = new FormData();
     data.append("name", formValues.name);
     data.append("email", formValues.email);
@@ -47,6 +49,7 @@ export default function Contact() {
     })
       .then((response) => {
         if (response.ok) {
+          setLoading(false);
           setResponse(true);
           setShowModal(true);
           setFormValues({
@@ -55,11 +58,13 @@ export default function Contact() {
             message: "",
           });
         } else {
+          setLoading(false);
           setResponse(false);
           setShowModal(true);
         }
       })
       .catch((error) => {
+        setLoading(false);
         setResponse(false);
         setShowModal(true);
       });
@@ -67,12 +72,17 @@ export default function Contact() {
 
   return (
     <section className={styles.container}>
+      {loading ? <Loading /> : ""}
       {showModal ? (
         <Modal response={response} onClose={() => setShowModal(false)} />
       ) : (
         ""
       )}
       <h2>contact us</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores,
+        natus!
+      </p>
       <form onSubmit={handlerSubmit} className={styles.form}>
         <label htmlFor="name">Name</label>
         <input

@@ -1,10 +1,10 @@
+import Layout from "@/components/Layout";
+import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Skill from "@/components/Skill";
+import Project from "@/components/Project";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Layout from "@/components/Layout";
-import Project from "@/components/Project";
-import Skill from "@/components/Skill";
 
 export default function Home() {
   return (

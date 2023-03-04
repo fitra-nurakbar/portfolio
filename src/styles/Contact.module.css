@@ -5,10 +5,10 @@
   @apply font-semibold;
 }
 .container h2 {
-  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] font-bold mb-10;
+  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] font-bold mb-4;
 }
 .container > p {
-  @apply mb-10;
+  @apply text-center mb-12;
 }
 .form {
   @apply flex flex-col;
