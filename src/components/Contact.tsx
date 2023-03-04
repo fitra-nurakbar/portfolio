@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import Modal from "@/components/Modal";
 import styles from "@/styles/Contact.module.css";
-import Modal from "./Modal";
+import React, { useState } from "react";
 
 type FormValues = {
   name: string;
@@ -14,8 +14,8 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const [showModal, setShowModal] = useState(false);
-  const [response, setResponse] = useState("");
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const [response, setResponse] = useState<boolean>(false);
 
   const handlerChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -47,8 +47,7 @@ export default function Contact() {
     })
       .then((response) => {
         if (response.ok) {
-          // Success response
-          setResponse("Success!");
+          setResponse(true);
           setShowModal(true);
           setFormValues({
             name: "",
@@ -56,12 +55,14 @@ export default function Contact() {
             message: "",
           });
         } else {
-          // Error response
-          setResponse("Error!");
+          setResponse(false);
           setShowModal(true);
         }
       })
-      .catch((error) => console.error("Error!", error.message));
+      .catch((error) => {
+        setResponse(false);
+        setShowModal(true);
+      });
   };
 
   return (

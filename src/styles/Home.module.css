@@ -1,4 +1,4 @@
-/* Profile styles */
+/* Hero section */
 .profile {
   @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] rounded-b-2xl grid md:flex justify-between items-center drop-shadow-md overflow-hidden;
 }
@@ -30,10 +30,10 @@
   @apply absolute h-[10px] w-[10px] bg-white/50 left-[80%] sm:left-[71%] rounded-full animate-bounce;
 }
 .pacman {
-  @apply absolute w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-b-[20px] border-l-white/50 border-r-transparent border-t-white/50 border-b-white/50 left-[57%] rounded-full animate-bounce hover:border-white/50 hover:translate-x-1/2 hover:cursor-pointer;
+  @apply absolute w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-b-[20px] border-l-white/50 border-r-transparent border-t-white/50 border-b-white/50 left-[57%] rounded-full animate-bounce hover:border-white/50 hover:translate-x-1/2 hover:cursor-pointer transition-colors duration-200 ease-in-out;
 }
 
-/* styles About */
+/* Contents */
 .content {
   @apply pt-7 pb-14 px-4 text-slate-500;
 }

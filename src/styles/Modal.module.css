@@ -1,9 +1,23 @@
-.modal {
-  @apply top-[2%] left-1/2 -translate-x-1/2 w-[90%] max-w-lg fixed transition-all bg-white text-[#94bbe9] border-2 border-[#94bbe9] flex justify-center items-center rounded-full;
+.outside {
+  @apply fixed h-full w-full top-0 left-0 bg-slate-900/20;
 }
-.modal p {
-  @apply px-10 py-5 w-full;
+/* succes */
+.succes {
+  @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md fixed bg-white text-[#94bbe9] border-2 border-[#94bbe9] flex justify-center items-center rounded-md transition duration-300 ease-in-out;
 }
-.modal button {
-  @apply m-5 text-xs md:text-sm top-0 right-0 hover:text-red-500;
+.succes p {
+  @apply text-center px-5 py-10 w-full;
+}
+.succes button {
+  @apply absolute m-2 text-xs md:text-sm top-0 right-0 hover:scale-125;
+}
+/* failed */
+.failed {
+  @apply top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-md fixed bg-white text-[#eeaeca] border-2 border-[#eeaeca] flex justify-center items-center rounded-md transition duration-300 ease-in-out;
+}
+.failed p {
+  @apply text-center px-5 py-10 w-full;
+}
+.failed button {
+  @apply absolute m-2 text-xs md:text-sm top-0 right-0 hover:scale-125;
 }

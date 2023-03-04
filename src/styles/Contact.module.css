@@ -11,5 +11,5 @@
   @apply rounded-md py-2 px-3 bg-[#94bbe9]/20 focus:outline-[#94bbe9] mb-8;
 }
 .form button {
-  @apply border-2 border-transparent hover:border-[#94bbe9] bg-[#94bbe9] hover:bg-[#94bbe9]/20 text-lg text-white hover:text-[#94bbe9] font-medium rounded-full py-3 sm:w-1/2;
+  @apply border-2 border-transparent hover:border-[#94bbe9] bg-[#94bbe9] hover:bg-[#94bbe9]/20 text-lg text-white hover:text-[#94bbe9] font-medium rounded-full py-3 sm:w-1/2 transition-colors duration-300 ease-in-out;
 }
