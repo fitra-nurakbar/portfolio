@@ -12,9 +12,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Skill() {
   return (
     <section className={styles.container}>
-      <h2>my programming language expertise</h2>
+      <h2>programming language expertise</h2>
       <p>
-        <span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
+        I have <span>some skills</span> in the below{" "}
+        <span>programming languages</span>.
       </p>
       <div className={styles.containerIcons}>
         <FontAwesomeIcon

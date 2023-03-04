@@ -48,8 +48,8 @@ const project: Array<Projects> = [
 export default function Project() {
   return (
     <section className={styles.container}>
-      <h2>my recent projects</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, corrupti?</p>
+      <h2>recent projects</h2>
+      <p>I have skills in <span>web development</span> and have <span>worked on several projects</span> that went well.</p>
       <Swiper
         spaceBetween={30}
         pagination={{
