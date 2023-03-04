@@ -3,7 +3,7 @@
   @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] rounded-b-2xl grid md:flex justify-between items-center drop-shadow-md overflow-hidden;
 }
 .container img {
-  @apply relative;
+  @apply relative grayscale hover:grayscale-0 cursor-pointer hover:drop-shadow-md hover:scale-105 transition duration-300 ease-in-out;
 }
 .detail {
   @apply leading-6 text-slate-100 mt-10 md:mt-0 mx-10;

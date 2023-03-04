@@ -49,6 +49,7 @@ export default function Project() {
   return (
     <section className={styles.container}>
       <h2>my recent projects</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, corrupti?</p>
       <Swiper
         spaceBetween={30}
         pagination={{

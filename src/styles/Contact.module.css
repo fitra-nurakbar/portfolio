@@ -5,10 +5,10 @@
   @apply font-semibold;
 }
 .container h2 {
-  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] font-bold mb-4;
+  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold mb-4;
 }
 .container > p {
-  @apply text-center mb-12;
+  @apply text-center max-w-[80%] mx-auto mb-12;
 }
 .form {
   @apply flex flex-col;
@@ -23,5 +23,5 @@
   @apply rounded-md p-3 bg-[#94bbe9]/20 focus:outline-[#94bbe9] mb-8;
 }
 .form button {
-  @apply bg-gradient-to-tr hover:scale-90 hover:shadow-md from-[#94bbe9] to-[#eeaeca] text-lg text-white font-medium rounded-full py-3 sm:w-1/2 sm:mx-auto transition duration-300 ease-in-out mb-8;
+  @apply bg-gradient-to-tr hover:scale-90 hover:drop-shadow-md from-[#94bbe9] to-[#eeaeca] text-lg text-white font-medium rounded-full py-3 sm:w-1/2 sm:mx-auto transition duration-300 ease-in-out mb-8;
 }

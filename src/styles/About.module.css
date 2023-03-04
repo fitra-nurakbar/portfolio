@@ -1,9 +1,12 @@
 .container {
-  @apply py-32 px-4 text-slate-500;
+  @apply pt-10 pb-20 px-4 text-slate-500;
 }
 .container span {
   @apply font-semibold;
 }
 .container h2 {
-  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] font-bold mb-10;
+  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold mb-4;
+}
+.container > p {
+  @apply text-center max-w-[80%] mx-auto mb-14;
 }

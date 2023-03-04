@@ -1,5 +1,5 @@
 .card {
-  @apply border-2;
+  @apply shadow-md bg-white;
 }
 .card img {
   @apply h-auto w-full;

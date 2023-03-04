@@ -15,8 +15,7 @@ export default function Hero() {
           Hello There<span className={styles.hi}>👋</span>
         </h1>
         <q>
-          I&apos;am a <span>software developer</span> with proven experience in
-          creating and designing <span>software</span>.
+          I&apos;am <span>Fitra Nurakbar</span>, And I&apos;am a <span>software developer</span> with proven experience in creating and designing <span>software</span>.
         </q>
       </div>
       <Image
