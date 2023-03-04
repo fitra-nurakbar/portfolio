@@ -1,11 +1,18 @@
 import styles from "@/styles/Card.module.css";
+import Image from "next/image";
 
 export default function Card() {
   return (
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, officiis
-      possimus magni odio maiores id nisi ipsa cum voluptates obcaecati dolorem
-      natus recusandae est! Quod autem quas reprehenderit nostrum qui.
-    </p>
+    <div className={styles.card}>
+      <Image
+        src={"/assets/project/L&P.png"}
+        width={500}
+        height={500}
+        alt="L&P Project image"
+      />
+      <p>
+        <span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
+      </p>
+    </div>
   );
 }

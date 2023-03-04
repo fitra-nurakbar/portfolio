@@ -1,0 +1,9 @@
+.card {
+  @apply border-2;
+}
+.card img {
+  @apply h-auto w-full;
+}
+.card p {
+  @apply py-5 px-2;
+}

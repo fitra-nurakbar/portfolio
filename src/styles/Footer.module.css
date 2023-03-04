@@ -1,7 +1,7 @@
-.footer {
+.container {
   @apply bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] text-sm text-center rounded-t-2xl text-white/50 pt-5 pb-10 shadow-md overflow-hidden;
 }
-.footer a {
+.container a {
   @apply text-white font-medium;
 }
 .containerIcons {

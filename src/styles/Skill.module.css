@@ -1,0 +1,9 @@
+.container {
+  @apply py-32 px-4 text-slate-500;
+}
+.container span {
+  @apply font-semibold;
+}
+.container h2 {
+  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] font-bold mb-10;
+}

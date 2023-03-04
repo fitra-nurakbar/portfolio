@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.container}>
       <div className={styles.containerIcons}>
         <Link
           href={"https://www.linkedin.com/in/fitra-nurakbar-5967a8230/"}

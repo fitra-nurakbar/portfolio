@@ -1,8 +1,8 @@
 /* Hero section */
-.profile {
+.container {
   @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] rounded-b-2xl grid md:flex justify-between items-center drop-shadow-md overflow-hidden;
 }
-.profile img {
+.container img {
   @apply relative;
 }
 .detail {
@@ -31,18 +31,4 @@
 }
 .pacman {
   @apply absolute w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-b-[20px] border-l-white/50 border-r-transparent border-t-white/50 border-b-white/50 left-[57%] rounded-full animate-bounce hover:border-white/50 hover:translate-x-1/2 hover:cursor-pointer transition-colors duration-200 ease-in-out;
-}
-
-/* Contents */
-.content {
-  @apply pt-7 pb-14 px-4 text-slate-500;
-}
-.content span {
-  @apply font-semibold;
-}
-.content h2 {
-  @apply uppercase text-lg text-[#94bbe9] font-bold mb-2;
-}
-.content >   p {
-  @apply mb-10
 }

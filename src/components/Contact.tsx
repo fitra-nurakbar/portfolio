@@ -66,13 +66,13 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <section className={styles.container}>
       {showModal ? (
         <Modal response={response} onClose={() => setShowModal(false)} />
       ) : (
         ""
       )}
-      <h2>Contact Us</h2>
+      <h2>contact us</h2>
       <form onSubmit={handlerSubmit} className={styles.form}>
         <label htmlFor="name">Name</label>
         <input
@@ -98,12 +98,11 @@ export default function Contact() {
           id="message"
           value={formValues.message}
           onChange={handlerChange}
-          cols={30}
-          rows={10}
+          rows={5}
           required
         ></textarea>
         <button type="submit">Send message</button>
       </form>
-    </>
+    </section>
   );
 }

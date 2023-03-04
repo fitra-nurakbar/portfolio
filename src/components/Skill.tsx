@@ -1,9 +1,9 @@
-import styles from "@/styles/About.module.css";
+import styles from "@/styles/Skill.module.css";
 
-export default function About() {
+export default function Skill() {
   return (
     <section className={styles.container}>
-      <h2>about me</h2>
+      <h2>my programming language expertise</h2>
       <p>
         <span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
         Quae eaque repellat aut voluptates odio praesentium et cum delectus a?
