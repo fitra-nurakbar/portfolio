@@ -8,11 +8,11 @@ export default function About() {
         Hi, my <span>name</span> is <span>Fitra Nurakbar</span>.
       </p>
       <p>
-        I'm a passionate <span>web developer</span> with a love for creating{" "}
+        I&apos;m a passionate <span>web developer</span> with a love for creating{" "}
         <span>beautiful</span> and <span>functional web apps </span>.
       </p>
       <p>
-        I'm <span>always striving</span> to <span>improve my skills</span> and{" "}
+        I&apos;m <span>always striving</span> to <span>improve my skills</span> and{" "}
         <span>new technologies</span> , with the goal of providing the best
         solutions for <span>my clients</span>.
       </p>
@@ -22,7 +22,7 @@ export default function About() {
         <span>NextJS</span>, <span>Gatsby</span>, and <span>Laravel</span>.
       </p>
       <p>
-        <span>When</span> I'm not coding, I{" "}
+        <span>When</span> I&apos;m not coding, I{" "}
         <span>enjoy playing the guitar</span>.
       </p>
       <p>
