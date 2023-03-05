@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import styles from "@/styles/Layout.module.css";
 import { inter } from "@/utils/fonts";
 
-type LayoutProps = {  
+type LayoutProps = {
   children: ReactNode;
   title: string;
 };

@@ -1,0 +1,3 @@
+.message {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl sm:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold drop-shadow-md;
+}

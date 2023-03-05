@@ -9,38 +9,22 @@ const project: Array<Projects> = [
   {
     id: 1,
     image: {
-      alt: "Project satu",
-      path: "/assets/",
-      name: "L&P.png",
+      alt: "Unity site",
+      path: "/assets/project/",
+      name: "unity-site.png",
     },
-    description: "Image satu",
+    title: "Unity site",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus non quia sequi vel ex officia facilis provident atque quibusdam id accusamus, asperiores quasi. Ipsam molestiae quas necessitatibus provident fuga.",
   },
   {
     id: 2,
     image: {
-      alt: "Project satu",
-      path: "/assets/",
+      alt: "L&P Project",
+      path: "/assets/project/",
       name: "L&P.png",
     },
-    description: "Image dua",
-  },
-  {
-    id: 3,
-    image: {
-      alt: "Project satu",
-      path: "/assets/",
-      name: "L&P.png",
-    },
-    description: "Image tiga",
-  },
-  {
-    id: 4,
-    image: {
-      alt: "Project satu",
-      path: "/assets/",
-      name: "L&P.png",
-    },
-    description: "Image tiga",
+    title: "L&P site",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus non quia sequi vel ex officia facilis provident atque quibusdam id accusamus, asperiores quasi. Ipsam molestiae quas necessitatibus provident fuga.",
   },
 ];
 
@@ -56,7 +40,7 @@ export default function Project() {
         spaceBetween={10}
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
@@ -64,7 +48,7 @@ export default function Project() {
       >
         {project.map((pro, index) => (
           <SwiperSlide key={index}>
-            <Card />
+            <Card image={pro.image} title={pro.title} description={pro.description} id={pro.id} />
           </SwiperSlide>
         ))}
       </Swiper>

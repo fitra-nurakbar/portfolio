@@ -1,20 +1,22 @@
 import styles from "@/styles/Card.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import { Projects } from "@/utils/interface/project";
 
-export default function Card() {
+export default function Card(props: Projects) {
+  const { image, title, description,  } = props
+
   return (
     <div className={styles.card}>
       <Image
-        src={"/assets/project/L&P.png"}
+        src={`${image.path + image.name}`}
         width={500}
         height={500}
-        alt="L&P Project image"
+        alt={image.alt}
       />
       <div className={styles.detail}>
-        <h3>Title</h3>
+        <h3>{title}</h3>
         <p>
-          <span>Lorem ipsum</span> dolor sit, amet consectetur adipisicing elit. Sunt dolor omnis sed ad dolorum iusto sequi animi voluptate, aspernatur quam illo et dicta facere repellendus quasi temporibus eaque illum inventore.
+          {description}
         </p>
       </div>
     </div>
