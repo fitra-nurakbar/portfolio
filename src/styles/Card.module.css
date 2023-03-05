@@ -1,9 +1,12 @@
 .card {
-  @apply shadow-md bg-white;
+  @apply drop-shadow-md bg-white rounded-xl overflow-hidden mx-4 mb-2;
 }
-.card img {
-  @apply h-auto w-full;
+.detail {
+  @apply py-8 px-6;
 }
-.card p {
-  @apply py-5 px-2;
+.detail h3 {
+  @apply text-slate-900 text-xl font-semibold mb-3;
+}
+.detail p {
+  @apply mb-4;
 }

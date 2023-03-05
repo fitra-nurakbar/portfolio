@@ -1,5 +1,6 @@
 import styles from "@/styles/Card.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Card() {
   return (
@@ -10,9 +11,12 @@ export default function Card() {
         height={500}
         alt="L&P Project image"
       />
-      <p>
-        <span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit.
-      </p>
+      <div className={styles.detail}>
+        <h3>Title</h3>
+        <p>
+          <span>Lorem ipsum</span> dolor sit, amet consectetur adipisicing elit. Sunt dolor omnis sed ad dolorum iusto sequi animi voluptate, aspernatur quam illo et dicta facere repellendus quasi temporibus eaque illum inventore.
+        </p>
+      </div>
     </div>
   );
 }

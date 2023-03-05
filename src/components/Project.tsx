@@ -1,10 +1,9 @@
 import Card from "@/components/Card";
 import { Projects } from "@/utils/interface/project";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay } from "swiper";
 import styles from "@/styles/Project.module.css";
 import "swiper/css";
-import "swiper/css/pagination";
 
 const project: Array<Projects> = [
   {
@@ -49,18 +48,18 @@ export default function Project() {
   return (
     <section className={styles.container}>
       <h2>recent projects</h2>
-      <p>I have skills in <span>web development</span> and have <span>worked on several projects</span> that went well.</p>
+      <p>
+        I have skills in <span>web development</span> and have{" "}
+        <span>worked on several projects</span> that went well.
+      </p>
       <Swiper
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+        spaceBetween={10}
         loop={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         className={styles.swiper}
       >
         {project.map((pro, index) => (
