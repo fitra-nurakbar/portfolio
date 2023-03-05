@@ -11,7 +11,7 @@ export default function Skill() {
       </p>
       <div className={styles.containerIcons}>
         <FontAwesomeIcon icon={faJs} className="hover:text-[#F7DF1E]" title="JavaScript" titleId="JavaScript-logo" />
-        <FontAwesomeIcon icon={faReact} className="hover:text-[#61DAFB]" title="React" titleId="React-logo" />
+        <FontAwesomeIcon icon={faReact} className="hover:text-[#61DAFB]" title="ReactJS" titleId="ReactJS-logo" />
         <FontAwesomeIcon icon={faNodeJs} className="hover:text-[#3C873A]" title="NodeJS" titleId="NodeJS-logo" />
         <FontAwesomeIcon icon={faPhp} className="hover:text-[#777BB4]" title="PHP" titleId="PHP-logo" />
         <FontAwesomeIcon icon={faJava} className="hover:text-[#007396]" title="Java" titleId="Java-logo" />
