@@ -27,8 +27,7 @@ export default function Contact() {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbxFEh2x1Icu8F1JXu6DJPOkr_TYqjL0vpzRs6wMJ036i31KwSzAGUyBRg9pMLaHy8_H/exec";
+  const scriptURL = process.env.EXCEL_URL;
 
   const handlerSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -47,8 +46,8 @@ export default function Contact() {
       method: "POST",
       body: formData,
     })
-      .then((response) => {
-        if (response.ok) {
+      .then((res) => {
+        if (res.ok) {
           setLoading(false);
           setResponse(true);
           setShowModal(true);
@@ -68,9 +67,10 @@ export default function Contact() {
         setResponse(false);
         setShowModal(true);
       });
-  };
 
-  return (
+    };
+    
+    return (
     <section className={styles.container}>
       {loading ? <Loading /> : ""}
       {showModal ? (

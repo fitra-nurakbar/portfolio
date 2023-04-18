@@ -11,12 +11,34 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        hi: "hi 1.5s ease-in-out infinite",
+        wave: "wave 2.1s ease-in-out infinite",
       },
       keyframes: {
-        hi: {
-          "0%, 100%": { transform: "rotate(-25deg)" },
-          "50%": { transform: "rotate(25deg)" },
+        wave: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "10%": {
+            transform: "rotate(14deg)",
+          } /* The following five values can be played with to make the waving more or less extreme */,
+          "20%": {
+            transform: "rotate(-8deg)",
+          },
+          "30%": {
+            transform: "rotate(14deg)",
+          },
+          "40%": {
+            transform: "rotate(-4deg)",
+          },
+          "50%": {
+            transform: "rotate(10deg)",
+          },
+          "60%": {
+            transform: "rotate(0deg)",
+          } /* Reset for the last half to pause */,
+          "100%": {
+            transform: "rotate(0deg)",
+          },
         },
       },
     },

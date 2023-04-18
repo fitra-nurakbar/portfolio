@@ -12,18 +12,20 @@ export default function Hero() {
       <div className={styles.pacman}></div>
       <div className={styles.detail}>
         <h1 className={poppins.className}>
-          Hello There<span className={styles.hi}>👋</span>
+          Hello There<span className={styles.wave}>👋</span>
         </h1>
         <q>
-          I&apos;am <span>Fitra Nurakbar</span>, And I&apos;am a <span>software developer</span> with proven experience in creating and <span>designing software</span>.
+          I&apos;am <span>Fitra Nurakbar</span>, And I&apos;am a{" "}
+          <span>software developer</span> with proven experience in creating and{" "}
+          <span>designing software</span>.
         </q>
       </div>
       <Image
         src={"/assets/photo-profile.png"}
-        width={200}
-        height={200}
+        width={150}
+        height={150}
         alt="my photo profile"
-        priority={true}
+        priority
       />
     </section>
   );

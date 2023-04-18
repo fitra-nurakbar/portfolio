@@ -2,10 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp"],
+    domains: ["fitra-nurakbar.vercel.app", "images.unsplash.com"],
+    formats: ["image/webp", "image/avif"],
     loader: "default",
-    domains: ["fitra-nurakbar.vercel.app"],
   },
+  env: {
+    EXCEL_URL: process.env.EXCEL_URL,
+    DATABASE_URL: process.env.DATABASE_URL
+  }
 };
 
 module.exports = nextConfig;
