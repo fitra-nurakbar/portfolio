@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { poppins } from "@/utils/fonts";
-import styles from "@/styles/Hero.module.css";
+import styles from "@/styles/Banner.module.css";
 
-export default function Hero() {
+export default function Banner() {
   return (
     <section className={styles.container}>
       <div className={styles.circle1}></div>

@@ -8,7 +8,7 @@ export default function Blog() {
       <p>
         In my <span>spare time</span>, I <span>sometimes</span> share <span>experiences</span> in a post.
       </p>
-      <Link href={"/post"}>Recent posts</Link>
+      <Link href={"/posts"}>Recent posts</Link>
     </section>
   );
 }

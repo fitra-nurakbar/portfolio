@@ -1,4 +1,3 @@
-/* Hero section */
 .container {
   @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] rounded-b-2xl grid md:flex justify-between items-center drop-shadow-md overflow-hidden;
 }

@@ -62,7 +62,7 @@ export default function Contact() {
           setShowModal(true);
         }
       })
-      .catch((error) => {
+      .catch((err) => {
         setLoading(false);
         setResponse(false);
         setShowModal(true);

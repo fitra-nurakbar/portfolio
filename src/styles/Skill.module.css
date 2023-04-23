@@ -1,5 +1,5 @@
 .container {
-  @apply pt-20 pb-24 px-4 text-slate-500 bg-gradient-to-tr from-[#94bbe9]/10 to-[#eeaeca]/10;
+  @apply pt-20 pb-24 px-4 bg-gradient-to-tr from-[#94bbe9]/10 to-[#eeaeca]/10;
 }
 .container span {
   @apply font-semibold;
