@@ -17,7 +17,6 @@ export default function Layout({ children, title }: LayoutProps) {
     <>
       <Head>
         <title>{titleProps}</title>
-        <link rel="icon" href="/assets/icons/say-hi.png" />
       </Head>
       <main
         className={`${title === "Home" ? styles.primary : styles.secondary} ${
