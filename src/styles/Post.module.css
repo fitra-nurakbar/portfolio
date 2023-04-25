@@ -1,3 +1,12 @@
+.container {
+  @apply pt-10 pb-20 px-4;
+}
+.container h2 {
+  @apply capitalize text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold mb-4;
+}
 .message {
-  @apply absolute uppercase top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold drop-shadow-md;
+  @apply uppercase min-h-[80vh] flex justify-center items-center text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold drop-shadow-md;
+}
+.wrapper {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2;
 }

@@ -8,12 +8,12 @@ export default function About() {
         Hi, my <span>name</span> is <span>Fitra Nurakbar</span>.
       </p>
       <p>
-        I&apos;m a passionate <span>web developer</span> with a love for creating{" "}
-        <span>beautiful</span> and <span>functional web apps </span>.
+        I&apos;m a passionate <span>web developer</span> with a love for
+        creating <span>beautiful</span> and <span>functional web apps </span>.
       </p>
       <p>
-        I&apos;m <span>always striving</span> to <span>improve my skills</span> and{" "}
-        <span>new technologies</span> , with the goal of providing the best
+        I&apos;m <span>always striving</span> to <span>improve my skills</span>{" "}
+        and <span>new technologies</span> , with the goal of providing the best
         solutions for <span>my clients</span>.
       </p>
       <p>

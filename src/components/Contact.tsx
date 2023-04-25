@@ -67,10 +67,9 @@ export default function Contact() {
         setResponse(false);
         setShowModal(true);
       });
+  };
 
-    };
-    
-    return (
+  return (
     <section className={styles.container}>
       {loading ? <Loading /> : ""}
       {showModal ? (

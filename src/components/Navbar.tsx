@@ -33,7 +33,9 @@ export const Navbar = () => {
           <li>
             <Link
               href="/posts"
-              className={`${isActive("/posts") ? styles.activeLink : ""} ${styles.link}`}
+              className={`${isActive("/posts") ? styles.activeLink : ""} ${
+                styles.link
+              }`}
             >
               Posts
             </Link>
@@ -41,7 +43,9 @@ export const Navbar = () => {
           <li>
             <Link
               href="/projects"
-              className={`${isActive("/projects") ? styles.activeLink : ""} ${styles.link}`}
+              className={`${isActive("/projects") ? styles.activeLink : ""} ${
+                styles.link
+              }`}
             >
               Projects
             </Link>

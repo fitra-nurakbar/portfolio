@@ -1,5 +1,5 @@
 .card {
-  @apply shadow-md bg-white rounded-xl overflow-hidden mx-4 mb-2;
+  @apply shadow-md bg-white rounded-xl overflow-hidden border;
 }
 .detail {
   @apply py-8 px-6;

@@ -1,12 +1,31 @@
 {
   "name": "portfolio",
+  "description": "personal website",
   "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://fitra-nurakbar.vercel.app/",
+  "author": "Fitra Nurakbar <fitranurakbar378@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fitra-nurakbar/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "blog",
+    "personal-website",
+    "javascript",
+    "react.js",
+    "next.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/fitra-nurakbar/portfolio/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

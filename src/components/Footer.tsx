@@ -2,6 +2,7 @@ import styles from "@/styles/Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
+  faTwitter,
   faGithub,
   faInstagram,
   faLinkedin,
@@ -28,7 +29,7 @@ export default function Footer() {
           href={"https://web.facebook.com/fitra.nurakbar.52/"}
           target="_blank"
         >
-          <FontAwesomeIcon icon={faFacebook} />
+          <FontAwesomeIcon icon={faTwitter} />
         </Link>
       </div>
       <p>

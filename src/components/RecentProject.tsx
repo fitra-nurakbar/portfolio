@@ -2,7 +2,7 @@ import Card from "@/components/Card";
 import { Projects } from "@/utils/interface/project";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
-import styles from "@/styles/Project.module.css";
+import styles from "@/styles/RecentProject.module.css";
 import "swiper/css";
 
 const project: Array<Projects> = [
@@ -14,7 +14,8 @@ const project: Array<Projects> = [
       name: "unity-site.png",
     },
     title: "Unity site",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus non quia sequi vel ex officia facilis provident atque quibusdam id accusamus, asperiores quasi. Ipsam molestiae quas necessitatibus provident fuga.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus non quia sequi vel ex officia facilis provident atque quibusdam id accusamus, asperiores quasi. Ipsam molestiae quas necessitatibus provident fuga.",
   },
   {
     id: 2,
@@ -24,11 +25,12 @@ const project: Array<Projects> = [
       name: "L&P.png",
     },
     title: "L&P site",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus non quia sequi vel ex officia facilis provident atque quibusdam id accusamus, asperiores quasi. Ipsam molestiae quas necessitatibus provident fuga.",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus non quia sequi vel ex officia facilis provident atque quibusdam id accusamus, asperiores quasi. Ipsam molestiae quas necessitatibus provident fuga.",
   },
 ];
 
-export default function Project() {
+export default function RecentProject() {
   return (
     <section className={styles.container}>
       <h2>recent projects</h2>
@@ -37,7 +39,7 @@ export default function Project() {
         <span>worked on several projects</span> that went well.
       </p>
       <Swiper
-        spaceBetween={10}
+        spaceBetween={20}
         loop={true}
         autoplay={{
           delay: 3000,
@@ -48,7 +50,12 @@ export default function Project() {
       >
         {project.map((pro, index) => (
           <SwiperSlide key={index}>
-            <Card image={pro.image} title={pro.title} description={pro.description} id={pro.id} />
+            <Card
+              image={pro.image}
+              title={pro.title}
+              description={pro.description}
+              id={pro.id}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -9,8 +9,8 @@ const nextConfig = {
   env: {
     EXCEL_URL: process.env.EXCEL_URL,
     DATABASE_URL: process.env.DATABASE_URL,
-    BASE_URL: process.env.BASE_URL
-  }
+    BASE_URL: process.env.BASE_URL,
+  },
 };
 
 module.exports = nextConfig;

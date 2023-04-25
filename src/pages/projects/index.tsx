@@ -1,10 +1,13 @@
-import Layout from '@/components/Layout'
-import React from 'react'
+import Layout from "@/components/Layout";
+import styles from "@/styles/Project.module.css";
 
 export default function Projects() {
   return (
-    <Layout title='Projects'>
-        <h1 className='h-[50rem]'>Projects</h1>
+    <Layout title="Projects">
+      <div className={styles.container}>
+        <h2>All Projects</h2>
+        <div className={styles.wrapper}></div>
+      </div>
     </Layout>
-  )
+  );
 }
