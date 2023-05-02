@@ -42,6 +42,16 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
+              href="/cv"
+              className={`${isActive("/cv") ? styles.activeLink : ""} ${
+                styles.link
+              }`}
+            >
+              CV
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/projects"
               className={`${isActive("/projects") ? styles.activeLink : ""} ${
                 styles.link

@@ -24,7 +24,7 @@ export default function Banner() {
         src={"/assets/photo-profile.png"}
         width={150}
         height={150}
-        alt="my photo profile"
+        alt="Fitra Nurakbar"
         priority
       />
     </section>

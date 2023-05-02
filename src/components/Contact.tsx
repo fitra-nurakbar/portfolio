@@ -77,7 +77,7 @@ export default function Contact() {
       ) : (
         ""
       )}
-      <h2>contact us</h2>
+      <h2>contact me</h2>
       <p>
         If you wish to <span>contact me</span>, feel free to message{" "}
         <span>below here</span>. I really
