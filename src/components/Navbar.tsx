@@ -24,12 +24,12 @@ export const Navbar = () => {
   }, [scrolled]);
 
   return (
-    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
+    <header className={`${scrolled ? styles.headerScrolled : styles.header}`}>
       <nav>
         <Link href={"/"}>
-          <strong>Fitra Nurakbar</strong>
+          <strong className={styles.navbarTitle}>fit.tra_</strong>
         </Link>
-        <ul>
+        <ul className={styles.navbarList}>
           <li>
             <Link
               href="/posts"
@@ -42,12 +42,12 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              href="/cv"
-              className={`${isActive("/cv") ? styles.activeLink : ""} ${
+              href="/resume"
+              className={`${isActive("/resume") ? styles.activeLink : ""} ${
                 styles.link
               }`}
             >
-              CV
+              Resume
             </Link>
           </li>
           <li>

@@ -39,17 +39,17 @@ export default function RecentProject() {
         <span>worked on several projects</span> that went well.
       </p>
       <Swiper
-        spaceBetween={20}
+        spaceBetween={5}
+        
         loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className={styles.swiper}
       >
         {project.map((pro, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className={styles.swiper}>
             <Card
               image={pro.image}
               title={pro.title}

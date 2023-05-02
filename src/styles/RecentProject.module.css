@@ -10,3 +10,6 @@
 .container > p {
   @apply text-center max-w-[80%] mx-auto mb-14;
 }
+.swiper {
+  @apply p-5;
+}
