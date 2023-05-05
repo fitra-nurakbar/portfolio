@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
-import Banner from "@/components/Banner";
-import About from "@/components/About";
-import Skill from "@/components/Skill";
-import RecentProject from "@/components/RecentProject";
-import Contact from "@/components/Contact";
-import Blog from "@/components/Blog";
+import Banner from "@/components/home/Banner";
+import About from "@/components/home/About";
+import Skill from "@/components/home/Skill";
+import RecentProject from "@/components/home/RecentProject";
+import Contact from "@/components/home/Contact";
+import Blog from "@/components/home/Blog";
 
 export default function Home() {
   return (

@@ -1,15 +1,15 @@
 .container {
-  @apply bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] text-sm text-center rounded-t-2xl text-slate-100 pt-5 pb-10 drop-shadow-md overflow-hidden;
+  @apply bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] text-sm text-center rounded-t-2xl text-slate-100 pt-5 pb-10 drop-shadow-md overflow-hidden -bottom-0 absolute w-full;
 }
 .container a {
   @apply text-white font-semibold;
 }
 .container > a {
-  @apply hover:underline transition-all duration-500 ease-in-out;
+  @apply hover:underline;
 }
 .containerIcons {
   @apply flex justify-center items-center gap-3 mb-5;
 }
 .containerIcons a {
-  @apply w-10 h-10 p-3 flex justify-center items-center bg-white rounded-full text-[#94bbe9] hover:scale-110 hover:shadow-[0_0_5px_rgb(238,174,202)] transition-all duration-300 ease-in-out;
+  @apply w-10 h-10 p-3 flex justify-center items-center bg-white rounded-full text-[#94bbe9] hover:scale-110 hover:shadow-[0_0_5px_rgb(238,174,202)] transition-all duration-100 ease-in-out;
 }

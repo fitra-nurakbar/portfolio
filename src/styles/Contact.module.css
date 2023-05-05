@@ -1,5 +1,5 @@
 .container {
-  @apply py-20 px-4;
+  @apply pt-20 pb-60 px-4;
 }
 .container span {
   @apply font-semibold;

@@ -71,12 +71,10 @@ export default function Contact() {
 
   return (
     <section className={styles.container}>
-      {loading ? <Loading /> : ""}
+      {loading ? <Loading /> : null}
       {showModal ? (
         <Modal response={response} onClose={() => setShowModal(false)} />
-      ) : (
-        ""
-      )}
+      ) : null}
       <h2>contact me</h2>
       <p>
         If you wish to <span>contact me</span>, feel free to message{" "}

@@ -9,9 +9,7 @@ export default function Resume() {
         <h2>Curriculum Vitae</h2>
         <div className={styles.wrapper}>
           <Link href={"/assets/cv/Fitra_Nurakbar.pdf"} target="_blank">
-          <button>
-          Download CV
-          </button>
+            <button>Download CV</button>
           </Link>
         </div>
       </div>

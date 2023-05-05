@@ -9,7 +9,7 @@ export default function Blog() {
         In my <span>spare time</span>, I <span>sometimes</span> share{" "}
         <span>experiences</span> in a post.
       </p>
-      <Link href={"/posts"}>Recent posts</Link>
+      <Link href={"/posts"} target="_blank" rel="noopener noreferrer">Recent posts</Link>
     </section>
   );
 }

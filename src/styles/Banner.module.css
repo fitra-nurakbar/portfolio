@@ -5,16 +5,19 @@
   @apply relative grayscale hover:grayscale-0 cursor-pointer hover:drop-shadow-md hover:scale-105 transition duration-300 ease-in-out h-auto w-auto;
 }
 .detail {
-  @apply leading-6 text-slate-100 mt-10 md:mt-0 mx-10;
+  @apply bg-white/50 border-double border-b-4 border-r-4 border-slate-500 dark:border-slate-300 dark:bg-slate-900/50 backdrop-blur-md shadow-md rounded-xl mt-10 md:mt-0 p-5 mx-5;
 }
 .detail h1 {
-  @apply text-2xl font-semibold text-white;
+  @apply text-2xl font-semibold;
 }
 .wave {
   @apply inline-block animate-wave;
 }
 .detail span {
-  @apply font-semibold text-white;
+  @apply font-semibold;
+}
+.detail button {
+  @apply block ml-auto hover:underline;
 }
 /* .circle1 {
   @apply absolute h-[200px] w-[200px] bg-white/50 -translate-x-1/4 md:translate-x-0 md:left-3/4 rounded-full;

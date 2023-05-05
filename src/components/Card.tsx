@@ -16,7 +16,7 @@ export default function Card(props: Projects) {
           alt={image.alt}
         />
       ) : (
-        ""
+        null
       )}
       <article className={`${styles.detail} ${poppins.className}`}>
         <h3>{title}</h3>
