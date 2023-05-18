@@ -1,36 +1,55 @@
 .container {
-  @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] rounded-b-2xl grid md:flex justify-between items-center overflow-hidden;
+  @apply relative bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)] rounded-b-2xl grid md:flex justify-between items-start overflow-hidden animate-aurora bg-[length:200%];
 }
 .container img {
-  @apply relative grayscale hover:grayscale-0 cursor-pointer hover:drop-shadow-md hover:scale-105 transition duration-300 ease-in-out h-auto w-auto;
+  @apply cursor-pointer flex-1 grayscale hover:grayscale-0 hover:drop-shadow-md hover:scale-105 transition duration-300 ease-in-out h-auto w-auto;
 }
 .detail {
-  @apply bg-white/50 border-double border-b-4 border-r-4 border-slate-500 dark:border-slate-300 dark:bg-slate-900/50 backdrop-blur-md shadow-md rounded-xl mt-10 md:mt-0 p-5 mx-5;
+  @apply capitalize flex-1 p-5 m-4 z-50;
 }
 .detail h1 {
-  @apply text-2xl font-semibold;
+  @apply text-2xl text-white font-semibold;
 }
 .wave {
   @apply inline-block animate-wave;
 }
-.detail span {
-  @apply font-semibold;
-}
 .detail button {
   @apply block ml-auto hover:underline;
 }
-/* .circle1 {
-  @apply absolute h-[200px] w-[200px] bg-white/50 -translate-x-1/4 md:translate-x-0 md:left-3/4 rounded-full;
+
+.cube {
+  @apply absolute border-[#ff1c7f] border animate-cube top-3/4 left-2/4 h-3 w-3; 
 }
-.circle2 {
-  @apply absolute h-[10px] w-[10px] bg-white/50 left-[70%] sm:left-[65%] rounded-full animate-bounce;
+.cube:nth-child(2n) {
+  @apply border-[#1180ff]
 }
-.circle3 {
-  @apply absolute h-[10px] w-[10px] bg-white/50 left-[75%] sm:left-[68%] rounded-full animate-bounce;
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  left: 25%;
+  top: 40%;
 }
-.circle4 {
-  @apply absolute h-[10px] w-[10px] bg-white/50 left-[80%] sm:left-[71%] rounded-full animate-bounce;
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  left: 75%;
+  top: 50%;
 }
-.pacman {
-  @apply absolute w-0 h-0 border-l-[20px] border-r-[20px] border-t-[20px] border-b-[20px] border-l-white/50 border-r-transparent border-t-white/50 border-b-white/50 left-[57%] rounded-full animate-bounce hover:border-white/50 hover:translate-x-1/2 hover:cursor-pointer transition-colors duration-200 ease-in-out;
-} */
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  left: 90%;
+  top: 10%;
+}
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  left: 10%;
+  top: 85%;
+}
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  left: 50%;
+  top: 10%;
+}

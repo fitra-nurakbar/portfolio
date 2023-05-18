@@ -1,5 +1,5 @@
 .container {
-  @apply py-20 px-4 text-center text-slate-100 bg-gradient-to-br from-[#94bbe9] to-[#eeaeca];
+  @apply py-20 px-4 text-center text-slate-100 bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] animate-aurora bg-[length:300%];
 }
 .container span {
   @apply font-semibold text-white;

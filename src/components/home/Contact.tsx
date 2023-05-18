@@ -78,9 +78,8 @@ export default function Contact() {
       <h2>contact me</h2>
       <p>
         If you wish to <span>contact me</span>, feel free to message{" "}
-        <span>below here</span>. I really
-        <span>enjoyed</span> talking to you. <span>Thanks</span> for visiting my
-        profile!
+        <span>below here</span>. I really <span>enjoyed</span> talking to you.{" "}
+        <span>Thanks</span> for visiting my profile!
       </p>
       <form onSubmit={handlerSubmit} className={styles.form}>
         <label htmlFor="name">Name</label>

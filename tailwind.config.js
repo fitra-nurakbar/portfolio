@@ -13,8 +13,31 @@ module.exports = {
     extend: {
       animation: {
         wave: "wave 2.1s ease-in-out infinite",
+        aurora: "aurora 5s ease-in-out infinite",
+        spinning: "spinning 1.5s ease-in-out",
+        cube: "cube 12s ease-in forwards infinite",
       },
       keyframes: {
+        spinning: {
+          from: {
+            transform: "scale(0) rotate(0deg)",
+          },
+          to: {
+            transform: "scale(1) rotate(720deg)",
+            opacity: 1,
+          },
+        },
+        cube: {
+          from: {
+            transform: "scale(0) rotate(0deg) translate(-50%, -50%)",
+            opacity: 1,
+          },
+          to: {
+            transform: "scale(20) rotate(960deg) translate(-50%, -50%)",
+            opacity: 0,
+            borderRadius: "100%",
+          },
+        },
         wave: {
           "0%": {
             transform: "rotate(0deg)",
@@ -41,6 +64,20 @@ module.exports = {
             transform: "rotate(0deg)",
           },
         },
+        aurora: {
+          "0%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+          "100%": {
+            backgroundPosition: "0% 50%",
+          },
+        },
+      },
+      animationDelay: {
+        '200': '200ms',
       },
     },
   },

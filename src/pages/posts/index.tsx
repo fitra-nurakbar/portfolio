@@ -13,7 +13,7 @@ export default function Posts({ data: { posts, error } }: PostsProps) {
   return (
     <Layout title="Posts">
       <section className={styles.container}>
-        <h2>All Posts</h2>
+        <h2>Artworks</h2>
         <div className={styles.wrapper}>
           {error ? (
             <h3 className={styles.message}>Failed to load data</h3>

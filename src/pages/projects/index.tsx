@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <Layout title="Projects">
       <div className={styles.container}>
-        <h2>All Projects</h2>
+        <h2>Projects</h2>
         <div className={styles.wrapper}></div>
       </div>
     </Layout>

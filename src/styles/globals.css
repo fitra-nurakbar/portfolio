@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --color-primary: 148 187 233;
-    --color-secondary: 111 114 185;
+    --color-primary: #94bbe9;
+    --color-secondary: #eeaeca;
   }
 }
 
@@ -34,4 +34,11 @@
   .animate-delay-1000 {
     animation-delay: 1s;
   }
+}
+
+.Typewriter__wrapper {
+  @apply text-3xl font-semibold text-white drop-shadow-[0_0_2px_currentColor] !important;
+}
+.Typewriter__cursor {
+  @apply text-3xl text-white;
 }

@@ -11,5 +11,5 @@
   @apply flex justify-center items-center gap-3 mb-5;
 }
 .containerIcons a {
-  @apply w-10 h-10 p-3 flex justify-center items-center bg-white rounded-full text-[#94bbe9] hover:scale-110 hover:shadow-[0_0_5px_rgb(238,174,202)] transition-all duration-100 ease-in-out;
+  @apply w-10 h-10 p-3 flex justify-center items-center bg-white rounded-full text-[#94bbe9] hover:scale-110 hover:shadow-[0_0_3px_rgb(238,174,202)] transition-all duration-100 ease-in-out;
 }
