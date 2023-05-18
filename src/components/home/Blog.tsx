@@ -1,4 +1,6 @@
 import styles from "@/styles/Blog.module.css";
+import { faArrowAltCircleRight, faArrowRight, faArrowTurnRight, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function Blog() {
@@ -11,7 +13,7 @@ export default function Blog() {
         <span>explore</span> the depths of my <span>imagination</span>.
       </p>
       <Link href={"/posts"} target="_blank" rel="noopener noreferrer">
-        See Works
+        <FontAwesomeIcon icon={faArrowTurnRight} />See Works
       </Link>
     </section>
   );

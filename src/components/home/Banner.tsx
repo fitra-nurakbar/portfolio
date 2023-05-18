@@ -3,9 +3,7 @@ import { poppins } from "@/utils/fonts";
 import Image from "next/image";
 import Type from "./Type";
 
-
 export default function Banner() {
-
   return (
     <section className={styles.container}>
       <div className={styles.cube}></div>
@@ -18,7 +16,9 @@ export default function Banner() {
         <h1 className={poppins.className}>
           Hello There <span className={styles.wave}>👋</span>
         </h1>
-        <h1>I&apos;am,<strong>FITRA NURAKBAR</strong> </h1>
+        <p>
+          I&apos;am, <strong>FITRA NURAKBAR</strong>
+        </p>
         <Type />
       </div>
       <Image
