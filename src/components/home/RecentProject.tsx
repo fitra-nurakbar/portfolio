@@ -39,8 +39,6 @@ export default function RecentProject() {
         <span>worked on several projects</span> that went well.
       </p>
       <Swiper
-        spaceBetween={5}
-        
         loop={true}
         autoplay={{
           delay: 3000,

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { ReactNode } from "react";
 import styles from "@/styles/Layout.module.css";
-import { inter } from "@/utils/fonts";
+import { inter, lato } from "@/utils/fonts";
 import { Navbar } from "./Navbar";
 import Footer from "./Footer";
 
@@ -20,7 +20,7 @@ export default function Layout({ children, title }: LayoutProps) {
       </Head>
       <main
         className={`${title === "Home" ? styles.primary : styles.secondary} ${
-          inter.className
+          lato.className
         }`}
       >
         {title !== "Home" && title !== "Not found" && <Navbar />}

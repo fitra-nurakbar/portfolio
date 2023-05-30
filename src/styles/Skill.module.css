@@ -5,7 +5,7 @@
   @apply font-semibold;
 }
 .container h2 {
-  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] font-bold mb-4;
+  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)] font-bold mb-4;
 }
 .container > p {
   @apply text-center max-w-[80%] mx-auto mb-14;

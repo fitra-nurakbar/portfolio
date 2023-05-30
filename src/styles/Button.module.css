@@ -1,6 +1,6 @@
 .primaryButton {
-    @apply bg-gradient-to-tr hover:scale-90 hover:drop-shadow-md from-[#94bbe9] to-[#eeaeca] text-lg text-white font-medium rounded-full py-3 sm:w-1/2 sm:mx-auto transition duration-300 ease-in-out mb-8 animate-aurora bg-[length:200%];
+    @apply bg-gradient-to-tr hover:scale-90 hover:drop-shadow-md from-[var(--color-primary)] to-[var(--color-secondary)] text-lg text-white font-medium rounded-full py-3 sm:w-1/2 sm:mx-auto transition duration-300 ease-in-out mb-8 animate-aurora bg-[length:200%];
 }
 .secondaryButton {
-    @apply bg-gradient-to-tr hover:scale-90 hover:drop-shadow-md from-[#94bbe9] to-[#eeaeca] text-lg text-white font-medium rounded-md py-3 px-5 sm:mx-auto transition duration-300 ease-in-out animate-aurora bg-[length:200%];
+    @apply bg-gradient-to-tr hover:scale-90 hover:drop-shadow-md from-[var(--color-primary)] to-[var(--color-secondary)] text-lg text-white font-medium rounded-md py-3 px-5 sm:mx-auto transition duration-300 ease-in-out animate-aurora bg-[length:200%];
 }

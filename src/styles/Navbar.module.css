@@ -1,5 +1,5 @@
 .header {
-  @apply top-0 px-5 text-white py-4 bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] backdrop-blur-md transition-all duration-300 rounded-b-2xl;
+  @apply top-0 px-5 text-white py-4 bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)] backdrop-blur-md transition-all duration-300 rounded-b-2xl;
 }
 .headerScrolled {
   @apply sticky top-0 px-5 text-transparent py-4 bg-gradient-to-tr from-[#94bbe9]/10 to-[#eeaeca]/10 backdrop-blur-md transition-all duration-300 rounded-b-2xl;
@@ -9,19 +9,19 @@
   @apply flex justify-between items-center;
 }
 .navbarTitle {
-  @apply uppercase text-center text-2xl font-bold mb-4 text-inherit bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca];
+  @apply uppercase text-center text-2xl font-bold mb-4 text-inherit bg-clip-text bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)];
 }
 .navbarList {
   @apply md:flex gap-5 p-2 hidden;
 }
 .link {
-  @apply relative py-1 font-semibold text-inherit bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca] text-sm md:text-base uppercase;
+  @apply relative py-1 font-semibold text-inherit bg-clip-text bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)] text-sm md:text-base uppercase;
 }
 .link::before {
   @apply absolute w-full content-[""] left-0 bottom-0 h-[2px] invisible scale-x-0 bg-white transition-all duration-300 ease-in-out;
 }
 .headerScrolled .link::before {
-  @apply bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca];
+  @apply bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)];
 }
 .link:hover::before,
 .activeLink::before {

@@ -48,33 +48,31 @@ export default function Contact() {
     })
       .then((res) => {
         if (res.ok) {
-          setLoading(false);
           setResponse(true);
-          setShowModal(true);
           setFormValues({
             name: "",
             email: "",
             message: "",
           });
         } else {
-          setLoading(false);
           setResponse(false);
-          setShowModal(true);
         }
       })
       .catch((err) => {
-        setLoading(false);
         setResponse(false);
+      })
+      .finally(() => {
+        setLoading(false);
         setShowModal(true);
       });
   };
 
   return (
     <section className={styles.container}>
-      {loading ? <Loading /> : null}
-      {showModal ? (
+      {loading && <Loading />}
+      {showModal && (
         <Modal response={response} onClose={() => setShowModal(false)} />
-      ) : null}
+      )}
       <h2>contact me</h2>
       <p>
         If you wish to <span>contact me</span>, feel free to message{" "}

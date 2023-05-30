@@ -5,7 +5,7 @@
   @apply py-8 px-6;
 }
 .detail h3 {
-  @apply text-xl font-semibold mb-3 text-transparent bg-clip-text bg-gradient-to-tr from-[#94bbe9] to-[#eeaeca];
+  @apply text-xl font-semibold mb-3 text-transparent bg-clip-text bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)];
 }
 .detail p {
   @apply mb-4;

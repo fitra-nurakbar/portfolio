@@ -2,14 +2,14 @@
   @apply pt-10 pb-20 px-4;
 }
 .container h2 {
-  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold mb-4;
+  @apply capitalize text-center text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] font-bold mb-4;
 }
 .message {
-  @apply uppercase min-h-[80vh] flex justify-center items-center text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[#94bbe9] to-[#eeaeca] font-bold drop-shadow-md;
+  @apply uppercase min-h-[80vh] flex justify-center items-center text-2xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] font-bold drop-shadow-md;
 }
 .wrapper {
   @apply text-center;
 }
 .wrapper button {
-  @apply bg-gradient-to-tr hover:scale-90 hover:drop-shadow-md from-[#94bbe9] to-[#eeaeca] text-lg text-white font-medium rounded-md py-3 px-5 sm:mx-auto transition duration-300 ease-in-out mb-8;
+  @apply bg-gradient-to-tr hover:scale-90 hover:drop-shadow-md from-[var(--color-primary)] to-[var(--color-secondary)] text-lg text-white font-medium rounded-md py-3 px-5 sm:mx-auto transition duration-300 ease-in-out mb-8;
 }

@@ -1,5 +1,4 @@
 import styles from "@/styles/Banner.module.css";
-import { poppins } from "@/utils/fonts";
 import Image from "next/image";
 import Type from "./Type";
 
@@ -13,8 +12,8 @@ export default function Banner() {
       <div className={styles.cube}></div>
       <div className={styles.cube}></div>
       <div className={styles.detail}>
-        <h1 className={poppins.className}>
-          Hello There <span className={styles.wave}>👋</span>
+        <h1>
+          Hi There <span className={styles.wave}>👋</span>
         </h1>
         <p>
           I&apos;am, <strong>FITRA NURAKBAR</strong>
