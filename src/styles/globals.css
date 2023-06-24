@@ -36,6 +36,9 @@
   }
 }
 
+body {
+  @apply bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-300
+}
 .Typewriter {
   @apply mt-4 !important;
 }
