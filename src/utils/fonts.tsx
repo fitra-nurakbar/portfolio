@@ -11,5 +11,5 @@ export const inter = Inter({
 
 export const lato = Lato({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });

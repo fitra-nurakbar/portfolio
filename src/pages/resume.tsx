@@ -8,7 +8,12 @@ export default function Resume() {
       <div className={styles.container}>
         <h2>Curriculum Vitae</h2>
         <div className={styles.wrapper}>
-          <Link href={"https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/e8a5a8fd40994e32ed786b9122fdd811.pdf"} target="_blank">
+          <Link
+            href={
+              "https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/e8a5a8fd40994e32ed786b9122fdd811.pdf"
+            }
+            target="_blank"
+          >
             <button>Download CV</button>
           </Link>
         </div>

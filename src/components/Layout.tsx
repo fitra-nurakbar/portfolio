@@ -23,9 +23,11 @@ export default function Layout({ children, title }: LayoutProps) {
           lato.className
         }`}
       >
-        {title !== "Home" && title !== "Not found" && <Navbar />}
+        {title !== "Home" &&
+          title !== "Not found" &&
+          title !== "Maintenance" && <Navbar />}
         {children}
-        {title !== "Not found" && <Footer />}
+        {title !== "Not found" && title !== "Maintenance" && <Footer />}
       </main>
     </>
   );

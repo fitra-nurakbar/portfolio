@@ -6,4 +6,4 @@ export default function LandingPage() {
       <div>LandingPage </div>
     </Layout>
   );
-};
+}

@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": ".gitignore",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}

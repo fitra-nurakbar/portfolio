@@ -20,7 +20,7 @@ export default function Contact() {
   const [loading, setLoading] = useState<boolean>(false);
 
   const handlerChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
 

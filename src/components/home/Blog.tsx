@@ -1,5 +1,10 @@
 import styles from "@/styles/Blog.module.css";
-import { faArrowAltCircleRight, faArrowRight, faArrowTurnRight, faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowAltCircleRight,
+  faArrowRight,
+  faArrowTurnRight,
+  faLongArrowAltRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
@@ -12,8 +17,9 @@ export default function Blog() {
         that allows me to express my <span>creativity</span> and{" "}
         <span>explore</span> the depths of my <span>imagination</span>.
       </p>
-      <Link href={"/posts"} target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faArrowTurnRight} />See Works
+      <Link href={"/maintenance"} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faArrowTurnRight} />
+        See Works
       </Link>
     </section>
   );

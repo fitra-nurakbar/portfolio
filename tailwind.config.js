@@ -77,7 +77,7 @@ module.exports = {
         },
       },
       animationDelay: {
-        '200': '200ms',
+        200: "200ms",
       },
     },
   },

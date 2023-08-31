@@ -2,7 +2,7 @@ import styles from "@/styles/Footer.module.css";
 import {
   faGithub,
   faInstagram,
-  faLinkedinIn
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
